@@ -1,7 +1,8 @@
 
 //requireing the routes
-var htmlRoutes = require("/app/routing/htmlRoutes.js");
-var htmlRoutes = require("/app/routing/apiRoutes.js");
+var htmlRoutes = require("./app/routing/htmlRoutes.js");
+var apiRoutes = require("./app/routing/apiRoutes.js");
+var friends = require("./app/data/friends.js");
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -16,4 +17,4 @@ app.listen(PORT, function() {
 });
 
 
-module.exports = server;
+//module.exports = server;

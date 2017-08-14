@@ -1,35 +1,24 @@
 var server = require("../../server.js");
-var apiRoutes = require("htmlRoutes.js");
+var htmlRoutes = require("./htmlRoutes.js");
 
+var apiRoutes = function(){
+	//get request to display all friends
+	app.get("/api/friends", function(req, res) {
+	    res.json(characters[i]);
+	});
 
-//get request to display all friends
-app.get("/api/friends", function(req, res) {
-  var chosen = req.params.characters;
+	//post request to handle determining friend compatibility
+	app.post("/api/new", function(req, res) {
+	  var friends = req.body;
 
-  if (chosen) {
-    console.log(chosen);
+	  console.log(newcharacter);
 
-    for (var i = 0; i < characters.length; i++) {
-      if (chosen === characters[i].routeName) {
-        return res.json(characters[i]);
-      }
-    }
-    return res.json(false);
-  }
-  return res.json(characters);
-});
+	  characters.push(newcharacter);
 
-//post request to handle determining friend compatibility
-app.post("/api/new", function(req, res) {
-  var newcharacter = req.body;
-  newcharacter.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
+	  res.json(newcharacter);
+	});
 
-  console.log(newcharacter);
-
-  characters.push(newcharacter);
-
-  res.json(newcharacter);
-});
+};
 
 
 module.exports = apiRoutes;
