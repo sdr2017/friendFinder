@@ -1,7 +1,4 @@
-var server = require("../../server.js");
-var htmlRoutes = require("./htmlRoutes.js");
-
-var apiRoutes = function(){
+var apiRoutes = function(app){
 	//get request to display all friends
 	app.get("/api/friends", function(req, res) {
 	    res.json(characters[i]);
