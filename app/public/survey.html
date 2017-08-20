@@ -12,7 +12,8 @@
 
   <!-- Linking to JQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="assets/javascript/app.js"></script>
+  <script src="/../routing/apiRoutes.js"></script>
+  <script src="/../data/friends.js"></script>
 
 
 </head>
@@ -22,329 +23,326 @@
 	<div class="container">
 		<div class ="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<form>
+					<h2>About You</h2>
+					<h3>Name</h3>
+					<input type="name" id="character-search" class="form-control">
 
-				<h2>About You</h2>
-				<h3>Name</h3>
-				<input type="text" id="character-search" class="form-control">
+					<h3>Link to Profile Image</h3>
+					<input type="image" id="character-search" class="form-control">
+					<hr>	
+
+					<h2>Question 1</h2>
+					<h3>You can't wait for the next episode of Game of Thrones</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
-				<h3>Link to Profile Image</h3>
-				<input type="text" id="character-search" class="form-control">
-				<hr>	
+
+
+
+					<h2>Question 2</h2>
+					<h3>You can't wait for the next Star Wars movie to come out</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
-				<h2>Question 1</h2>
-				<h3>You can't wait for the next episode of Game of Thrones</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+
+
+					<h2>Question 3</h2>
+					<h3>You think Balrogs should have wings </h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
+
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
 
 
 
+					<h2>Question 4</h2>
+					<h3>You do not recognize the Phantom Menace as a legit Star Wars movie </h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<h2>Question 2</h2>
-				<h3>You can't wait for the next Star Wars movie to come out</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
 
 
 
-				<h2>Question 3</h2>
-				<h3>You think Balrogs should have wings </h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<h2>Question 5</h2>
+					<h3>You know the response to "Valar Morghulis"</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
 
 
 
-				<h2>Question 4</h2>
-				<h3>You do not recognize the Phantom Menace as a legit Star Wars movie </h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<h2>Question 6</h2>
+					<h3>You know your Hogwartz house</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
 
 
 
-				<h2>Question 5</h2>
-				<h3>You know the response to "Valar Morghulis"</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<h2>Question 7</h2>
+					<h3>You believe in the heart of the cards</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
 
 
 
-				<h2>Question 6</h2>
-				<h3>You know your Hogwartz house</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<h2>Question 8</h2>
+					<h3>Everything changed when the Fire Nation attacked</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
 
 
 
-				<h2>Question 7</h2>
-				<h3>You believe in the heart of the cards</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<h2>Question 9</h2>
+					<h3>Han Solo fired first</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
 
 
 
-				<h2>Question 8</h2>
-				<h3>Everything changed when the Fire Nation attacked</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
+					<h2>Question 10</h2>
+					<h3>The night is dark and full of terrors</h3>
+					<label>
+						<input type="radio" value="5" name="question"><p class="tick">Strongly Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="4" name="question"><p class="tick">Somewhat Agree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="3" name="question"><p class="tick">Neutral</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
+					<label>
+						<input type="radio" value="2" name="question"><p class="tick">Somewhat Disagree</p>
+					</label>
+					<br>
 
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
+					<label>
+						<input type="radio" value="1" name="question"><p class="tick">Strongly Disagree</p>
+					</label>
+					<br>
+					<hr>
 
+					<button class="btn btn-primary" type="submit">Submit</button>
 
-
-
-				<h2>Question 9</h2>
-				<h3>Han Solo fired first</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
-
-
-
-
-				<h2>Question 10</h2>
-				<h3>The night is dark and full of terrors</h3>
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Agree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Agree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Neutral</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Somewhat Disagree</p>
-				</label>
-				<br>
-
-				<label>
-					<input type="radio" value="" name="question"><p class="tick">Strongly Disagree</p>
-				</label>
-				<br>
-				<hr>
-
-				<button class="btn btn-primary" type="submit">Submit</button>
-
-				<hr>
-
-
-
-
+					<hr>
+				</form>
 
 
 			</div>

@@ -6,7 +6,7 @@ var htmlRoutes = function(app) {
 	  res.sendFile(path.join(__dirname, "/../public/survey.html"));
 	});
 
-	app.use(function(req, res) { //display the home html page
+	app.get("/", function(req, res) { //display the home html page
 	  res.sendFile(path.join(__dirname, "/../public/home.html"));
 	});
 };

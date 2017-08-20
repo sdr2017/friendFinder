@@ -19,7 +19,7 @@ htmlRoutes(app);
 apiRoutes(app);
 
 //connecting to port
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);

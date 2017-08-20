@@ -1,21 +1,25 @@
+var path = require("path");
+var friends = require("../data/friends")
+
 var apiRoutes = function(app){
 	//get request to display all friends
 	app.get("/api/friends", function(req, res) {
-	    res.json(characters[i]);
+	    res.json(friends);
 	});
 
 	//post request to handle determining friend compatibility
 	app.post("/api/new", function(req, res) {
-	  var friends = req.body;
+	  var newFriend = req.body;
 
-	  console.log(newcharacter);
+	  console.log(newFriend);
 
-	  characters.push(newcharacter);
+	  // characters.push(newcharacter);
 
-	  res.json(newcharacter);
+	  res.json(newFriend);
 	});
 
 };
+
 
 
 module.exports = apiRoutes;
