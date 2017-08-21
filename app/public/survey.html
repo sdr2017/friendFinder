@@ -26,12 +26,12 @@
 				<form>
 					<h2>About You</h2>
 					<h3>Name</h3>
-					<input type="name" id="character-search" id="name" class="form-control">
+					<input type="name" id="name" class="form-control">
 
 					<br>
 
 					<h3>Link to Profile Image</h3>
-						<input type="name" id="character-search" id="image" class="form-control">
+						<input type="name" id="image" class="form-control">
 					<hr>	
 
 					<h2>Question 1</h2>
@@ -354,19 +354,33 @@
 	<script type="text/javascript">
     $("#submit").on("click", function(event) {
       event.preventDefault();
+      console.log("name", $("#name").val());
+      console.log("image", $("#image").val());
+      console.log($('input[type="radio"][name="question0"]:checked').val());
       var newFriend = {
-        name: $("#name").val().trim(),
-        image: $("#image").val().trim(),
-        score: [],
+        "name": $("#name").val().trim(),
+        "image": $("#image").val().trim(),
+        "score": [
+        	$('input[type="radio"][name="question0"]:checked').val(),
+        	$('input[type="radio"][name="question1"]:checked').val(),
+        	$('input[type="radio"][name="question2"]:checked').val(),
+        	$('input[type="radio"][name="question3"]:checked').val(),
+        	$('input[type="radio"][name="question4"]:checked').val(),
+        	$('input[type="radio"][name="question5"]:checked').val(),
+        	$('input[type="radio"][name="question6"]:checked').val(),
+        	$('input[type="radio"][name="question7"]:checked').val(),
+        	$('input[type="radio"][name="question8"]:checked').val(),
+        	$('input[type="radio"][name="question9"]:checked').val(),
+        ],
       };
 
-      for (var i = 0; i < 9; i++){
-      	score.push($('input[type="radio"][name="question' + [i] + '"]:checked').val());
-      };
+      // for (var i = 0; i < 9; i++){
+      // 	score.push($('input[type="radio"][name="question' + [i] + '"]:checked').val());
+      // };
 
       console.log(newFriend);
 
-      $.post("/api/new", newCharacter)
+      $.post("/api/friends", newFriend)
       .done(function(data) {
         console.log(data);
         alert("Adding character...");
