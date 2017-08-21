@@ -357,26 +357,17 @@
       console.log("name", $("#name").val());
       console.log("image", $("#image").val());
       console.log($('input[type="radio"][name="question0"]:checked').val());
+      var scoreArray = [];
+
+      for (var i = 0; i < 10; i++){
+      	scoreArray.push($('input[type="radio"][name="question' + [i] + '"]:checked').val());
+      };
+
       var newFriend = {
         "name": $("#name").val().trim(),
         "image": $("#image").val().trim(),
-        "score": [
-        	$('input[type="radio"][name="question0"]:checked').val(),
-        	$('input[type="radio"][name="question1"]:checked').val(),
-        	$('input[type="radio"][name="question2"]:checked').val(),
-        	$('input[type="radio"][name="question3"]:checked').val(),
-        	$('input[type="radio"][name="question4"]:checked').val(),
-        	$('input[type="radio"][name="question5"]:checked').val(),
-        	$('input[type="radio"][name="question6"]:checked').val(),
-        	$('input[type="radio"][name="question7"]:checked').val(),
-        	$('input[type="radio"][name="question8"]:checked').val(),
-        	$('input[type="radio"][name="question9"]:checked').val(),
-        ],
+        "score": scoreArray,
       };
-
-      // for (var i = 0; i < 9; i++){
-      // 	score.push($('input[type="radio"][name="question' + [i] + '"]:checked').val());
-      // };
 
       console.log(newFriend);
 
