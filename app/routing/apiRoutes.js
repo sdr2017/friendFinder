@@ -8,12 +8,11 @@ var apiRoutes = function(app){
 	});
 
 	//post request to handle determining friend compatibility
-	app.post("/api/new", function(req, res) {
+	app.post("/api/friends", function(req, res) {
 	  var newFriend = req.body;
+	  friends.push(req.body);
 
 	  console.log(newFriend);
-
-	  // characters.push(newcharacter);
 
 	  res.json(newFriend);
 	});
